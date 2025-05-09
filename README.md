@@ -1,6 +1,6 @@
 # Coffee Delivery
 
-## Este é um projeto de delivery de cafés desenvolvido como desafio prático para reforçar conceitos do ReactJS. Nele é possível acessar uma lista de cafés disponíveis e selecionar a quantidade que desejar dentre as opções e adicioná-los ao carrinho. Para concluir a compra basta adicionar o endereço de entrega (Os inputs possuem validaçõe) e modo de pagamento. 
+## Este é um projeto de delivery de cafés desenvolvido como desafio prático para reforçar conceitos do ReactJS. Nele é possível acessar uma lista de cafés disponíveis e selecionar a quantidade que desejar dentre as opções e adicioná-los ao carrinho. Para concluir a compra basta adicionar o endereço de entrega (Os inputs possuem validações) e modo de pagamento. 
 
 <div align="center">
     <img style="width: 800px;" src="./src/assets/1.png">
