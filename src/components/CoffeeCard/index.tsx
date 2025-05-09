@@ -27,7 +27,6 @@ export const Card: React.FC<CardProps> = ({ coffee }) => {
   const [quantity, setQuantity] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
   const { addCoffeeToCart } = useCart();
-
   const handleAddToCart = () => {
     const coffeeToAdd = {
       id: Number(coffee.id),

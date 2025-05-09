@@ -53,7 +53,7 @@ export function CartProvider({ children }: CartProviderProps) {
         ...prev,
         {
           ...coffee,
-          image: coffee.image?.replace("/images/coffees/", ""), 
+          //image: coffee.image?.replace("/images/coffees/", ""),
           quantity,
         },
       ]);
