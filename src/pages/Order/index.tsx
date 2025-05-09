@@ -40,8 +40,13 @@ const schema = z.object({
 export function Order() {
   const navigate = useNavigate();
   const [paymentMethod, setPaymentMethod] = useState("");
-  const { cart, incrementQuantity, decrementQuantity, removeCoffee } =
-    useCart();
+  const {
+    cart,
+    incrementQuantity,
+    decrementQuantity,
+    removeCoffee,
+    clearCart, // ✅ adicionada aqui
+  } = useCart();
 
   const deliveryFee = 3.5;
   const itemsTotal = cart.reduce(
@@ -77,6 +82,8 @@ export function Order() {
       toast.error("Selecione uma forma de pagamento.");
       return;
     }
+
+    clearCart(); // ✅ limpa o carrinho
 
     navigate("/OrderConfirmed", {
       state: {
